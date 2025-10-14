@@ -1,0 +1,223 @@
+/*
+ * Certains styles et structures de design sont inspirés ou dérivés de XP.css.
+ * * XP.css est sous Licence MIT. 
+ * Copyright (c) 2020 botoxparty (https://github.com/botoxparty)
+ * La licence complète peut être consultée ici :
+ * https://github.com/botoxparty/XP.css/blob/main/LICENSE
+ */
+
+.xp-window {
+  background-color: white; 
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  padding: 0 0 3px;
+  overflow: hidden; 
+ box-shadow: inset -1px -1px #00138c, inset 1px 1px #0831d9, inset -2px -2px #001ea0, inset 2px 2px #166aee, inset -3px -3px #003bda, inset 3px 3px #0855dd;
+}
+
+.title-bar-text > img {
+  margin-left: 0.2rem;
+  width: 20px;
+  height: 20px;
+}
+
+.title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #0831d9;
+  border-left: 1px solid #0831d9;
+  border-right: 1px solid #001ea0;
+
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+
+  gap: 0.2rem;
+  padding: 0.2em;
+background: linear-gradient(180deg, #0997ff, #0053ee 8%, #0050ee 40%, #06f 88%, #06f 93%, #005bff 95%, #003dd7 96%, #003dd7);}
+
+.title-bar-text {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+}
+
+
+h3 {
+  color: white;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.title-bar-controls {
+    display: flex; /* Aligne les 3 boutons côte à côte */
+}
+
+/* BOUTON DE CONTROLE */
+
+.title-bar-controls {
+    display: flex;
+}
+
+
+.title-bar-controls button {
+        min-width: 21px;
+        min-height: 21px;
+        margin-left: 2px;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: none;
+        background-color: #0050ee;
+        transition: background 100ms;
+        border: none;
+          /* Pour simuler le relief du bouton XP, ajoutez la bordure 3D que nous avions définie */
+    border: 1px solid;
+    border-color: #fff #6e6e6e #6e6e6e #fff; 
+}
+
+/* En CSS standard, vous devez cibler les états directement */
+.title-bar-controls button:active,
+.title-bar-controls button:hover,
+.title-bar-controls button:focus {
+    /* Retirer l'effet d'ombre/bordure au survol ou à l'activation si vous utilisez XP.css */
+    box-shadow: none !important; 
+    /* Vous pourriez aussi vouloir inverser la bordure au :active pour l'effet enfoncé */
+}
+
+/* --- 2. Remplacement de svg-load() par url() --- */
+
+.title-bar-controls button[aria-label="Minimize"] {
+    /* Ici, vous devez pointer vers l'emplacement réel de l'image */
+    background-image: url("icon/minimize.svg");
+    /* Vous devez répéter toutes les propriétés pour les états si vous ne pouvez pas imbriquer */
+}
+.title-bar-controls button[aria-label="Minimize"]:hover {
+    background-image: url("icon/minimize-hover.svg");
+}
+
+.title-bar-controls button[aria-label="Maximize"] {
+    background-image: url("icon/maximize.svg");
+}
+.title-bar-controls button[aria-label="Maximize"]:hover {
+    background-image: url("icon/maximize-hover.svg");
+}
+
+.title-bar-controls button[aria-label="Close"] {
+    /* Le bouton Fermer est souvent rouge sur XP Luna */
+    background-color: #C00000; 
+    background-image: url("icon/close.svg");
+}
+.title-bar-controls button[aria-label="Close"]:hover {
+    background-color: #FF0000;
+    background-image: url("icon/close-hover.svg");
+}
+
+
+/* FENETRE WINDOW */
+.window-info{
+  display: flex;
+  padding: 1rem;
+  gap: 1.4rem;
+  overflow-x: auto;
+}
+
+.card-window{
+  display: flex;
+  align-items: center;
+
+}
+
+.icon_img{
+  width: 3rem;
+}
+
+
+
+/* ====================================================== */
+/* =================== FORMAT DESKTOP =================== */
+/* ====================================================== */
+/* 
+@media screen and (min-width: 1200px){
+   .container{
+    padding-left: calc((100vw - 1200px) / 2 + 1.6rem);
+    padding-right: calc((100vw - 1200px) / 2 + 1.6rem);
+  }   
+
+
+  .window-desktop{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+   
+  }
+  
+  .xp-window{
+    margin: 0;
+  }
+
+  #a-propos{
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-bottom: 3rem;
+  }
+
+  #projets{
+        margin-left: 7rem;
+    margin-right: 7rem;
+    margin-top: 3rem;
+  }
+
+  .footer{
+        margin-left: 7rem;
+    margin-right: 7rem;
+    margin-top: 3rem;
+  }
+} */
+
+@media screen and (min-width: 1200px){
+   
+    /* 1. Marge et centrage général de la page */
+    .container{
+        /* Simplement centrer la colonne de contenu */
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        /* padding: 0 1.6rem; */
+    }   
+
+    /* 2. Mise en page de la section Compétences (la grille) */
+    #competences{ /* Cibler l'ID du conteneur parent */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        /* Assurez-vous que les fenêtres remplissent la grille */
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    
+    /* 3. Toutes les fenêtres dans cette grille remplissent l'espace */
+    #competences .xp-window{
+        margin: 0; /* Supprime les marges mobiles */
+    }
+
+    /* 4. Les fenêtres uniques (A propos, Projets, Footer) restent centrées dans le .container */
+    #a-propos, #projets, .footer{
+         /* Optionnel : leur donner une largeur plus compacte pour le look XP */
+         width: 62%;
+         margin: 3rem auto;
+    }
+
+
+    .window-info{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-window > p {
+      margin-left: 1rem;
+    }
+}

@@ -1,0 +1,157 @@
+/*
+ * Certains styles et structures de design sont inspirés ou dérivés de XP.css.
+ * * XP.css est sous Licence MIT. 
+ * Copyright (c) 2020 botoxparty (https://github.com/botoxparty)
+ * La licence complète peut être consultée ici :
+ * https://github.com/botoxparty/XP.css/blob/main/LICENSE
+ */
+
+/* Style par défault pour mobile first */
+
+body {
+  font-family: Tahoma, Verdana, sans-serif;
+  color: #000000;
+  /* Image */
+  background-image: url(img/fond_coline.jpg);
+  /* Le fond doit couvrir tout l'écran */
+  background-size: cover;
+  /* Le fond ne doit pas défiler, il doit rester statique pour simuler le bureau derrière les fenêtres */
+  background-attachment: fixed;
+  /* Assurer qu'il n'y a pas de marges par défaut */
+  margin: 0;
+  /* Espace en bas pour que le contenu s'arrête au dessus de la Barre des Tâches Fixes */
+  padding-bottom: 50px; /* Ajustez cette valeur à la hauteur exacte de votre barre de menu */
+}
+
+/* HEADER */
+
+/* Style du conteneur principal */
+#accueil {
+  min-height: 70vh;
+  position: relative; /* CLÉ : Pour positionner le bouton ABSOLUMENT par rapport à cette section */
+  text-align: center;
+  margin-top: 16rem;
+  
+}
+
+h2 {
+  margin-top: 20rem;
+}
+
+
+
+
+
+/* MENU DEROULANT */
+/* Le bouton Menu dans le coin supérieur droit de la première vue */
+#menu-toggle {
+  position: absolute;
+  top: 20px;
+  right: 33px;
+  z-index: 50;
+}
+
+#start-menu-panel {
+    /* Positionnement fixe pour flotter au-dessus de tout */
+    position: fixed;
+    top: 60px; /* Commence juste sous le bouton (ajustez selon votre header) */
+    right: 34px; /* Ancré au même endroit que le bouton */
+    
+    /* Styles du panneau XP */
+    width: 200px; /* Largeur fixe, pas 100% */
+    background-color: #ECE9D8; /* Gris clair XP */
+    z-index: 2000; /* Doit être très haut */
+    
+    /* Le cadre de la fenêtre XP (relief) */
+    border: 1px solid #000000; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    list-style: none; /* Supprime les puces si vous utilisez <ul>/<li> */
+    padding: 1rem; /* Padding interne */
+
+    /* CLÉ : Caché par défaut (géré par JS) */
+    display: none; 
+}
+
+
+/* La classe basculée par le JavaScript (pour afficher) */
+#start-menu-panel.is-open {
+    display: block; 
+}
+
+@media screen and (min-width: 1200px){
+  #menu-toggle{
+    right: 362px; 
+  }
+
+
+  #start-menu-panel{
+    right: 362px; /* Ancré au même endroit que le bouton */
+
+  }
+}
+
+
+
+
+
+/*-------------------------------------------*\
+    Buttons
+\*-------------------------------------------*/
+
+button {
+  font-family: var(--sans-serif);
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  box-sizing: border-box;
+  border: 1px solid #003c74;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(236, 235, 229, 1) 86%,
+    rgba(216, 208, 196, 1) 100%
+  );
+  box-shadow: none;
+  border-radius: 3px;
+  &:not(:disabled) {
+    &:active,
+    &.active {
+      box-shadow: none;
+      background: linear-gradient(
+        180deg,
+        rgba(205, 202, 195, 1) 0%,
+        rgba(227, 227, 219, 1) 8%,
+        rgba(229, 229, 222, 1) 94%,
+        rgba(242, 242, 241, 1) 100%
+      );
+    }
+    &:hover {
+      box-shadow: inset -1px 1px #fff0cf, inset 1px 2px #fdd889,
+        inset -2px 2px #fbc761, inset 2px -2px #e5a01a;
+    }
+  }
+  &:focus,
+  &.focused {
+    box-shadow: inset -1px 1px #cee7ff, inset 1px 2px #98b8ea,
+      inset -2px 2px #bcd4f6, inset 1px -1px #89ade4, inset 2px -2px #89ade4;
+  }
+  &::-moz-focus-inner {
+    border: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+.window-info-footer{
+  padding: 1rem;
+  text-align: center;
+}
