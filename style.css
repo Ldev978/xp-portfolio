@@ -34,11 +34,17 @@ body {
   
 }
 
-h2 {
+#accueil > p {
   margin-top: 20rem;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
-
+.section-title{
+  text-align: center;
+  grid-column: 1/-1;
+  color:white
+}
 
 
 
@@ -81,6 +87,7 @@ h2 {
 @media screen and (min-width: 1200px){
   #menu-toggle{
     right: 362px; 
+    padding: 0 1rem 0 1rem;
   }
 
 
@@ -138,11 +145,6 @@ button {
     border: 0;
   }
 }
-
-
-
-
-
 
 
 

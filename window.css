@@ -135,48 +135,16 @@ h3 {
   width: 3rem;
 }
 
+.photo-profil{
+  width: 8rem;
+  height: 8rem;
+  margin-top: 2rem;
+  border-radius: 50%;
+  border: 3px solid #0050ee;
+}
 
 
-/* ====================================================== */
-/* =================== FORMAT DESKTOP =================== */
-/* ====================================================== */
-/* 
-@media screen and (min-width: 1200px){
-   .container{
-    padding-left: calc((100vw - 1200px) / 2 + 1.6rem);
-    padding-right: calc((100vw - 1200px) / 2 + 1.6rem);
-  }   
 
-
-  .window-desktop{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-   
-  }
-  
-  .xp-window{
-    margin: 0;
-  }
-
-  #a-propos{
-    margin-left: 7rem;
-    margin-right: 7rem;
-    margin-bottom: 3rem;
-  }
-
-  #projets{
-        margin-left: 7rem;
-    margin-right: 7rem;
-    margin-top: 3rem;
-  }
-
-  .footer{
-        margin-left: 7rem;
-    margin-right: 7rem;
-    margin-top: 3rem;
-  }
-} */
 
 @media screen and (min-width: 1200px){
    
@@ -219,5 +187,15 @@ h3 {
 
     .card-window > p {
       margin-left: 1rem;
+    }
+
+    .photo-profil{
+      margin-top: 0;
+    }
+
+    .img-profil{
+     display: flex;
+     flex-direction: row;
+  
     }
 }
