@@ -6,6 +6,9 @@
  * https://github.com/botoxparty/XP.css/blob/main/LICENSE
  */
 
+/* ====================================================== */
+/* =================== FENETRE WINDOW =================== */
+/* ====================================================== */
 .xp-window {
   background-color: white; 
   margin-top: 2rem;
@@ -13,10 +16,10 @@
   margin-left: 2rem;
   margin-right: 2rem;
   border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
   padding: 0 0 3px;
   overflow: hidden; 
- box-shadow: inset -1px -1px #00138c, inset 1px 1px #0831d9, inset -2px -2px #001ea0, inset 2px 2px #166aee, inset -3px -3px #003bda, inset 3px 3px #0855dd;
+  box-shadow: inset -1px -1px #00138c, inset 1px 1px #0831d9, inset -2px -2px #001ea0, inset 2px 2px #166aee, inset -3px -3px #003bda, inset 3px 3px #0855dd;
 }
 
 .title-bar-text > img {
@@ -38,12 +41,12 @@
 
   gap: 0.2rem;
   padding: 0.2em;
-background: linear-gradient(180deg, #0997ff, #0053ee 8%, #0050ee 40%, #06f 88%, #06f 93%, #005bff 95%, #003dd7 96%, #003dd7);}
+  background: linear-gradient(180deg, #0997ff, #0053ee 8%, #0050ee 40%, #06f 88%, #06f 93%, #005bff 95%, #003dd7 96%, #003dd7);}
 
 .title-bar-text {
-    display: flex;
-    align-items: center;
-    gap: 8px; 
+  display: flex;
+  align-items: center;
+  gap: 8px; 
 }
 
 
@@ -54,29 +57,28 @@ h3 {
 }
 
 .title-bar-controls {
-    display: flex; /* Aligne les 3 boutons côte à côte */
+  display: flex; /* Aligne les 3 boutons côte à côte */
 }
+
 
 /* BOUTON DE CONTROLE */
-
 .title-bar-controls {
-    display: flex;
+  display: flex;
 }
 
-
 .title-bar-controls button {
-        min-width: 21px;
-        min-height: 21px;
-        margin-left: 2px;
-        background-repeat: no-repeat;
-        background-position: center;
-        box-shadow: none;
-        background-color: #0050ee;
-        transition: background 100ms;
-        border: none;
-          /* Pour simuler le relief du bouton XP, ajoutez la bordure 3D que nous avions définie */
-    border: 1px solid;
-    border-color: #fff #6e6e6e #6e6e6e #fff; 
+  min-width: 21px;
+  min-height: 21px;
+  margin-left: 2px;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: none;
+  background-color: #0050ee;
+  transition: background 100ms;
+  border: none;
+  /* Pour simuler le relief du bouton XP, ajoutez la bordure 3D que nous avions définie */
+  border: 1px solid;
+  border-color: #fff #6e6e6e #6e6e6e #fff; 
 }
 
 /* En CSS standard, vous devez cibler les états directement */
@@ -117,7 +119,6 @@ h3 {
 }
 
 
-/* FENETRE WINDOW */
 .window-info{
   display: flex;
   padding: 1rem;
@@ -158,27 +159,41 @@ h3 {
     }   
 
     /* 2. Mise en page de la section Compétences (la grille) */
-    #competences{ /* Cibler l'ID du conteneur parent */
+    #competences-grid{ /* Cibler l'ID du conteneur parent */
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
         /* Assurez-vous que les fenêtres remplissent la grille */
         margin-top: 5rem;
         margin-bottom: 5rem;
+        /* Ajout : S'assurer que la grille est centrée */
+        max-width: 100%;
     }
     
-    /* 3. Toutes les fenêtres dans cette grille remplissent l'espace */
-    #competences .xp-window{
+   /* 3. Toutes les fenêtres dans cette grille remplissent l'espace */
+    #competences-grid .xp-window{
         margin: 0; /* Supprime les marges mobiles */
     }
 
     /* 4. Les fenêtres uniques (A propos, Projets, Footer) restent centrées dans le .container */
-    #a-propos, #projets, .footer{
+    #competences, #a-propos, #projets, .footer{
          /* Optionnel : leur donner une largeur plus compacte pour le look XP */
          width: 62%;
          margin: 3rem auto;
     }
 
+
+    /* 5. Correction de l'alignement pour la fenêtre "À Propos" */
+    #a-propos .img-profil{
+        display: flex;
+        /* Aligne la photo et le texte côte à côte */
+        flex-direction: row; 
+        /* Espace entre l'image et le paragraphe */
+        gap: 2rem; 
+        /* Centre verticalement l'image par rapport au texte */
+        align-items: center; 
+        padding: 1rem; /* Marge interne pour ne pas coller les bords */
+    }
 
     .window-info{
       display: flex;
@@ -190,7 +205,11 @@ h3 {
     }
 
     .photo-profil{
-      margin-top: 0;
+      /* Vous pourriez vouloir donner une taille fixe à la photo ici */
+      width: 100px; 
+      height: 100px;
+      /* Assurer que l'image ne s'étire pas si elle est dans un conteneur flex */
+      flex-shrink: 0; 
     }
 
     .img-profil{
@@ -199,3 +218,5 @@ h3 {
   
     }
 }
+
+

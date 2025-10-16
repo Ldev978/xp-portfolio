@@ -1,309 +1,406 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="window.css">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="window.css"/>
 
     <title>Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header class="desktop-header">
+      <button id="menu-toggle" class="xp-button menu-top-right">Menu</button>
+    </header>
 
-<header class="desktop-header">
-    <button id="menu-toggle" class="xp-button menu-top-right">Menu</button>
-</header>
-
-<nav id="start-menu-panel" class="xp-menu-panel">
-    
-    <div class="menu-list-section">
-        <a href="#accueil">Accueil</a><br>
-        <a href="#a-propos">À Propos</a><br>
-        <a href="#competences">Compétences</a><br>
+    <nav id="start-menu-panel" class="xp-menu-panel">
+      <div class="menu-list-section">
+        <a href="#accueil">Accueil</a><br/>
+        <a href="#a-propos">À Propos</a><br/>
+        <a href="#competences">Compétences</a><br/>
         <a href="#projets">Projets</a>
-    </div>
+      </div>
 
-    <hr class="xp-separator">
+      <hr class="xp-separator" />
 
-    <div class="menu-social-section">
+      <div class="menu-social-section">
         <a href="URL_LINKEDIN" target="_blank">Réseaux sociaux</a>
-    </div>
-</nav>
+      </div>
+    </nav>
 
-<section id="accueil">
-    <h1>NOM <br>PRENOM</h1>
-    <p>DEVELOPPEUR WEB <br>JUNIOR</p>
-</section>
+    <section id="accueil">
+      <h1>NOM <br/>PRENOM</h1>
+      <p>DEVELOPPEUR WEB <br/>JUNIOR</p>
+    </section>
 
-
-<section id="a-propos" class="xp-window container">
-    <div class="title-bar">
+    <!-- DEBUT SECTION A PROPOS -->
+    <section id="a-propos" class="xp-window container">
+      <div class="title-bar">
         <div class="title-bar-text">
-        <img src="img/dossier.png" alt="image dossier">
-        <h3>A propos</h3>
+          <img src="img/dossier.png" alt="image dossier" />
+          <h3>A propos</h3>
         </div>
 
         <div class="title-bar-controls">
-            <button aria-label="Minimize" class="control-btn minimize-btn"></button>
-            <button aria-label="Maximize" class="control-btn maximize-btn"></button>
-            <button aria-label="Close" class="control-btn close-btn"></button>
+          <button
+            aria-label="Minimize"
+            class="control-btn minimize-btn"
+          ></button>
+          <button
+            aria-label="Maximize"
+            class="control-btn maximize-btn"
+          ></button>
+          <button aria-label="Close" class="control-btn close-btn"></button>
         </div>
-    </div>
-    <div class="window-info img-profil">
-     
-        <img src="img/dossier.png" alt="photo_profil" class="photo-profil">
+      </div>
+      <div class="window-info img-profil">
+        <img src="img/dossier.png" alt="photo_profil" class="photo-profil" />
         <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit natus quod quasi. 
-            Impedit quibusdam ex laudantium qui aut neque 
-            ipsum labore facere necessitatibus aliquid maiores nulla, laborum ullam itaque aspernatur!
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit natus
+          quod quasi. Impedit quibusdam ex laudantium qui aut neque ipsum labore
+          facere necessitatibus aliquid maiores nulla, laborum ullam itaque
+          aspernatur!
         </p>
-     
-    </div>
-</section>
+      </div>
+    </section>
+    <!-- FIN SECTION A PROPOS -->
 
-<section id="competences" class="window window-desktop container">
-    <h2 class="section-title">Compétences</h2>
-<article class="xp-window">
-    <div class="title-bar">
+    <!-- DEBUT SECTION COMPETENCES -->
+    <section id="competences" class="window window-desktop container">
+      <h2 class="section-title">Compétences</h2>
+      <div id="competences-grid">
+        <article class="xp-window">
+          <div class="title-bar">
+            <div class="title-bar-text">
+              <img src="img/dossier.png" alt="dossier"/>
+              <h3>Langages</h3>
+            </div>
+
+            <div class="title-bar-controls">
+              <button
+                aria-label="Minimize"
+                class="control-btn minimize-btn"
+              ></button>
+              <button
+                aria-label="Maximize"
+                class="control-btn maximize-btn"></button>
+              <button aria-label="Close" class="control-btn close-btn"></button>
+            </div>
+          </div>
+
+          <div class="window-info">
+            <div class="card-window">
+              <img
+                src="icon_competences/html.webp"
+                class="icon_img"
+                alt="logo html"/>
+              <p>html5</p>
+            </div>
+
+            <div class="card-window">
+              <img
+                src="icon_competences/CSS.png"
+                class="icon_img"
+                alt="logo css"/>
+              <p>css</p>
+            </div>
+
+            <div class="card-window">
+              <img
+                src="icon_competences/JS.png"
+                class="icon_img"
+                alt="logo javascript"/>
+              <p>javascript</p>
+            </div>
+
+            <div class="card-window">
+              <img
+                src="icon_competences/php.png"
+                class="icon_img"
+                alt="logo php"/>
+              <p>php</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="xp-window">
+          <div class="title-bar">
+            <div class="title-bar-text">
+              <img src="img/dossier.png" alt="dossier"/>
+              <h3>Conceptions</h3>
+            </div>
+
+            <div class="title-bar-controls">
+              <button
+                aria-label="Minimize"
+                class="control-btn minimize-btn"></button>
+              </button>
+              <button
+                aria-label="Maximize"
+                class="control-btn maximize-btn"
+              ></button>
+              <button aria-label="Close" class="control-btn close-btn"></button>
+            </div>
+          </div>
+
+          <div class="window-info">
+            <div class="card-window">
+              <img
+                src="icon_competences/Figma.png"
+                class="icon_img"
+                alt="logo html"
+              />
+              <p>Figma</p>
+            </div>
+
+            <div class="card-window">
+              <img
+                src="icon_competences/Canva.png"
+                class="icon_img"
+                alt="logo html"
+              />
+              <p>Canva</p>
+            </div>
+
+            <p>Modélisation SQL (Mérise)</p>
+          </div>
+        </article>
+
+        <article class="xp-window">
+          <div class="title-bar">
+            <div class="title-bar-text">
+              <img src="img/dossier.png" alt="dossier" />
+              <h3>Framework</h3>
+            </div>
+
+            <div class="title-bar-controls">
+              <button
+                aria-label="Minimize"
+                class="control-btn minimize-btn"
+              ></button>
+              <button
+                aria-label="Maximize"
+                class="control-btn maximize-btn"
+              ></button>
+              <button aria-label="Close" class="control-btn close-btn"></button>
+            </div>
+          </div>
+
+          <div class="window-info">
+            <div class="card-window">
+              <img
+                src="icon_competences/codeigniter.svg"
+                class="icon_img"
+                alt="logo html"
+              />
+              <p>CodeIgniter</p>
+            </div>
+
+            <div class="card-window">
+              <img
+                src="icon_competences/Bootstrap.png"
+                class="icon_img"
+                alt="logo html"
+              />
+              <p>Bootstrap</p>
+            </div>
+
+            <div class="card-window">
+              <img
+                src="icon_competences/tailwind.png"
+                class="icon_img"
+                alt="logo html"
+              />
+              <p>Tailwind CSS</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="xp-window">
+          <div class="title-bar">
+            <div class="title-bar-text">
+              <img src="img/dossier.png" alt="dossier" />
+              <h3>Environnements</h3>
+            </div>
+
+            <div class="title-bar-controls">
+              <button
+                aria-label="Minimize"
+                class="control-btn minimize-btn"
+              ></button>
+              <button
+                aria-label="Maximize"
+                class="control-btn maximize-btn"
+              ></button>
+              <button aria-label="Close" class="control-btn close-btn"></button>
+            </div>
+          </div>
+
+          <div class="window-info">
+            <div class="card-window">
+              <img
+                src="icon_competences/linux.png"
+                class="icon_img"
+                alt="logo html"
+              />
+              <p>Linux</p>
+            </div>
+
+            <div class="card-window">
+              <img
+                src="icon_competences/windows.png"
+                class="icon_img"
+                alt="logo html"
+              />
+              <p>Windows</p>
+            </div>
+
+            <div class="card-window">
+              <img
+                src="icon_competences/docker.png"
+                class="icon_img"
+                alt="logo html"
+              />
+              <p>Docker</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="xp-window">
+          <div class="title-bar">
+            <div class="title-bar-text">
+              <img src="img/dossier.png" alt="dossier" />
+              <h3>Gestion de projet</h3>
+            </div>
+
+            <div class="title-bar-controls">
+              <button
+                aria-label="Minimize"
+                class="control-btn minimize-btn"
+              ></button>
+              <button
+                aria-label="Maximize"
+                class="control-btn maximize-btn"
+              ></button>
+              <button aria-label="Close" class="control-btn close-btn"></button>
+            </div>
+          </div>
+
+          <div class="window-info">
+            <div class="card-window">
+              <img
+                src="icon_competences/agile-method.png"
+                class="icon_img"
+                alt="logo html"
+              />
+              <p>Méthode Agile</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="xp-window">
+          <div class="title-bar">
+            <div class="title-bar-text">
+              <img src="img/dossier.png" alt="dossier" />
+              <h3>...</h3>
+            </div>
+
+            <div class="title-bar-controls">
+              <button
+                aria-label="Minimize"
+                class="control-btn minimize-btn"
+              ></button>
+              <button
+                aria-label="Maximize"
+                class="control-btn maximize-btn"
+              ></button>
+              <button aria-label="Close" class="control-btn close-btn"></button>
+            </div>
+          </div>
+
+          <div class="window-info">
+            <div class="card-window">
+              <img
+                src="icon_competences/agile-method.png"
+                class="icon_img"
+                alt="logo html"
+              />
+              <p>...</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- FIN SECTION COMPETENCES -->
+
+    <!-- DEBUT SECTION PROJETS -->
+    <section id="projets" class="xp-window container">
+      <div class="title-bar">
         <div class="title-bar-text">
-        <img src="img/dossier.png" alt="dossier">
-        <h3>Langages</h3>
+          <img src="img/dossier.png" alt="image dossier" />
+          <h3>Projets</h3>
         </div>
 
         <div class="title-bar-controls">
-            <button aria-label="Minimize" class="control-btn minimize-btn"></button>
-            <button aria-label="Maximize" class="control-btn maximize-btn"></button>
-            <button aria-label="Close" class="control-btn close-btn"></button>
+          <button
+            aria-label="Minimize"
+            class="control-btn minimize-btn"
+          ></button>
+          <button
+            aria-label="Maximize"
+            class="control-btn maximize-btn"
+          ></button>
+          <button aria-label="Close" class="control-btn close-btn"></button>
         </div>
-    </div>
+      </div>
+      <div class="window-info">
+        <p>en construction</p>
+      </div>
+    </section>
+    <!-- FIN SECTION PROJETS -->
 
-    <div class="window-info">
-        <div class="card-window">
-            <img src="icon_competences/html.webp" class="icon_img" alt="logo html">
-            <p>html5</p>
-        </div>
-
-        <div class="card-window">
-            <img src="icon_competences/CSS.png" class="icon_img" alt="logo css">
-            <p>css</p>
-        </div>
-
-        <div class="card-window">
-            <img src="icon_competences/JS.png" class="icon_img" alt="logo javascript">
-            <p>javascript</p>
-        </div>
-        
-        <div class="card-window">
-            <img src="icon_competences/php.png" class="icon_img" alt="logo php">
-            <p>php</p>
-        </div>
-    </div>
-
-</article>
-
-
-
-<article class="xp-window">
-    <div class="title-bar">
+    <footer class="xp-window footer">
+      <div class="title-bar">
         <div class="title-bar-text">
-        <img src="img/dossier.png" alt="dossier">
-        <h3>Conceptions</h3>
+          <img src="img/dossier.png" alt="image dossier" />
+          <h3>Info</h3>
         </div>
 
         <div class="title-bar-controls">
-            <button aria-label="Minimize" class="control-btn minimize-btn"></button>
-            <button aria-label="Maximize" class="control-btn maximize-btn"></button>
-            <button aria-label="Close" class="control-btn close-btn"></button>
+          <button
+            aria-label="Minimize"
+            class="control-btn minimize-btn"
+          ></button>
+          <button
+            aria-label="Maximize"
+            class="control-btn maximize-btn"
+          ></button>
+          <button aria-label="Close" class="control-btn close-btn"></button>
         </div>
-    </div>
-
-    <div class="window-info">
-        <div class="card-window">
-            <img src="icon_competences/Figma.png" class="icon_img" alt="logo html">
-            <p>Figma</p>
-        </div>
-
-        <div class="card-window">
-            <img src="icon_competences/Canva.png" class="icon_img" alt="logo html">
-            <p>Canva</p>
-        </div>
-   
-    <p>Modélisation SQL (Mérise)</p>
-    </div>
-</article>
-
-
-<article class="xp-window">
-    <div class="title-bar">
-        <div class="title-bar-text">
-        <img src="img/dossier.png" alt="dossier">
-        <h3>Framework</h3>
-        </div>
-
-        <div class="title-bar-controls">
-            <button aria-label="Minimize" class="control-btn minimize-btn"></button>
-            <button aria-label="Maximize" class="control-btn maximize-btn"></button>
-            <button aria-label="Close" class="control-btn close-btn"></button>
-        </div>
-    </div>
-
-    <div class="window-info">
-        <div class="card-window">
-            <img src="icon_competences/codeigniter.svg" class="icon_img" alt="logo html">
-            <p>CodeIgniter</p>
-        </div>
-
-        <div class="card-window">
-            <img src="icon_competences/Bootstrap.png" class="icon_img" alt="logo html">
-            <p>Bootstrap</p>
-        </div>
-
-        <div class="card-window">
-            <img src="icon_competences/tailwind.png" class="icon_img" alt="logo html">
-            <p>Tailwind CSS</p>
-        </div>
-
-    </div>
-</article>
-
-<article class="xp-window">
-    <div class="title-bar">
-        <div class="title-bar-text">
-        <img src="img/dossier.png" alt="dossier">
-        <h3>Environnements</h3>
-        </div>
-
-        <div class="title-bar-controls">
-            <button aria-label="Minimize" class="control-btn minimize-btn"></button>
-            <button aria-label="Maximize" class="control-btn maximize-btn"></button>
-            <button aria-label="Close" class="control-btn close-btn"></button>
-        </div>
-    </div>
-
-    <div class="window-info">
-        <div class="card-window">
-            <img src="icon_competences/linux.png" class="icon_img" alt="logo html">
-            <p>Linux</p>
-        </div>
-
-        <div class="card-window">
-            <img src="icon_competences/windows.png" class="icon_img" alt="logo html">
-            <p>Windows</p>
-        </div>
-    
-    <div class="card-window">
-            <img src="icon_competences/docker.png" class="icon_img" alt="logo html">
-            <p>Docker</p>
-        </div>
-    </div>
-</article>
-
-<article class="xp-window">
-    <div class="title-bar">
-        <div class="title-bar-text">
-        <img src="img/dossier.png" alt="dossier">
-        <h3>Gestion de projet</h3>
-        </div>
-
-        <div class="title-bar-controls">
-            <button aria-label="Minimize" class="control-btn minimize-btn"></button>
-            <button aria-label="Maximize" class="control-btn maximize-btn"></button>
-            <button aria-label="Close" class="control-btn close-btn"></button>
-        </div>
-    </div>
-
-    <div class="window-info">
-        <div class="card-window">
-            <img src="icon_competences/agile-method.png" class="icon_img" alt="logo html">
-            <p>Méthode Agile</p>
-        </div>
-    </div>
-</article>
-
-<article class="xp-window">
-    <div class="title-bar">
-        <div class="title-bar-text">
-        <img src="img/dossier.png" alt="dossier">
-        <h3>...</h3>
-        </div>
-
-        <div class="title-bar-controls">
-            <button aria-label="Minimize" class="control-btn minimize-btn"></button>
-            <button aria-label="Maximize" class="control-btn maximize-btn"></button>
-            <button aria-label="Close" class="control-btn close-btn"></button>
-        </div>
-    </div>
-
-    <div class="window-info">
-        <div class="card-window">
-            <img src="icon_competences/agile-method.png" class="icon_img" alt="logo html">
-            <p>...</p>
-        </div>
-    </div>
-</article>
-
-</section>
-
-<section id="projets" class="xp-window cont ainer">
-    <div class="title-bar">
-        <div class="title-bar-text">
-        <img src="img/dossier.png" alt="image dossier">
-        <h3>Projets</h3>
-        </div>
-
-        <div class="title-bar-controls">
-            <button aria-label="Minimize" class="control-btn minimize-btn"></button>
-            <button aria-label="Maximize" class="control-btn maximize-btn"></button>
-            <button aria-label="Close" class="control-btn close-btn"></button>
-        </div>
-    </div>
-    <div class="window-info">
-        <p>
-            en construction
-        </p>
-    </div>
-</section>
-
-
-
-<footer class="xp-window footer">
-    <div class="title-bar">
-        <div class="title-bar-text">
-            <img src="img/dossier.png" alt="image dossier">
-            <h3>Info</h3>
-        </div>
-
-        <div class="title-bar-controls">
-            <button aria-label="Minimize" class="control-btn minimize-btn"></button>
-            <button aria-label="Maximize" class="control-btn maximize-btn"></button>
-            <button aria-label="Close" class="control-btn close-btn"></button>
-        </div>
-    </div>
-    <div class="window-info-footer">
+      </div>
+      <div class="window-info-footer">
         <p>2025 - NOM PRENOM</p>
         <p>Developpeur web junior</p>
         <small>Interface inspirée de XP.css (Licence MIT).</small>
-        <br>
-        <small>Les images sont téléchargées sur le site https://unsplash.com/</small>
-        <br>
-        <small>Les icones sont récupérées sur le site https://www.flaticon.com/.</small>
-        <br>
-        <small>Les icônes et les logos de technologies sont utilisés à des fins d'illustration descriptive et sont la propriété de leurs marques respectives.</small>
-    </div>
-</footer>
+        <br />
+        <small
+          >Les images sont téléchargées sur le site https://unsplash.com/</small
+        >
+        <br />
+        <small
+          >Les icones sont récupérées sur le site
+          https://www.flaticon.com/.</small
+        >
+        <br />
+        <small
+          >Les icônes et les logos de technologies sont utilisés à des fins
+          d'illustration descriptive et sont la propriété de leurs marques
+          respectives.</small
+        >
+      </div>
+    </footer>
 
-
-
-
-
-
-
-
-
-<script src="menu.js"></script>
-
-
-
-</body>
+    <script src="menu.js"></script>
+  </body>
 </html>
