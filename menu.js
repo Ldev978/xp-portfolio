@@ -1,3 +1,5 @@
+'use strict'
+
 document.addEventListener('DOMContentLoaded', function() {
     const menuButton = document.querySelector('#menu-toggle');
     const menuPanel = document.querySelector('#start-menu-panel');

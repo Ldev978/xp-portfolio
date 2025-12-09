@@ -1,305 +1,239 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="window.css"/>
 
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <header class="desktop-header">
-      <button id="menu-toggle" class="xp-button menu-top-right">Menu</button>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="window.css" />
 
-    <nav id="start-menu-panel" class="xp-menu-panel">
-      <div class="menu-list-section">
-        <a href="#accueil">Accueil</a><br/>
-        <a href="#a-propos">À Propos</a><br/>
-        <a href="#competences">Compétences</a><br/>
-        <a href="#projets">Projets</a>
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <header class="desktop-header">
+    <button id="menu-toggle" class="xp-button menu-top-right">Menu</button>
+  </header>
+
+  <nav id="start-menu-panel" class="xp-menu-panel">
+    <div class="menu-list-section">
+      <a href="#accueil">Accueil</a><br />
+      <a href="#a-propos">À Propos</a><br />
+      <a href="#competences">Compétences</a><br />
+      <a href="#projets">Projets</a>
+    </div>
+
+    <hr class="xp-separator" />
+
+    <div class="menu-social-section">
+      <a href="URL_LINKEDIN" target="_blank">
+      <img class="logo-linkedin" src="img/LinkedIn.svg.webp" alt="image LinkedIn">
+    </a>
+    </div>
+  </nav>
+
+  <section id="accueil">
+    <h1>NOM <br />PRENOM</h1>
+    <p>DEVELOPPEUR WEB <br />JUNIOR</p>
+  </section>
+
+  <!-- DEBUT SECTION A PROPOS -->
+  <section id="a-propos" class="xp-window container">
+    <div class="title-bar">
+      <div class="title-bar-text">
+        <img src="img/dossier.png" alt="image dossier" />
+        <h3>A propos</h3>
       </div>
 
-      <hr class="xp-separator" />
-
-      <div class="menu-social-section">
-        <a href="URL_LINKEDIN" target="_blank">Réseaux sociaux</a>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize" class="control-btn minimize-btn"></button>
+        <button aria-label="Maximize" class="control-btn maximize-btn"></button>
+        <button aria-label="Close" class="control-btn close-btn"></button>
       </div>
-    </nav>
+    </div>
+    <div class="window-profil img-profil">
+      <img src="img/dossier.png" alt="photo_profil" class="photo-profil" />
+      <p>
+        En reconvertion, j'ai entamerer une formation de développeur Web/ Web Mobile pendant 1 ans. J'ai ensuite
+        travailler
+        dans un petite entreprise durant 1 an.
+        Après une reconversion réussie, j'ai complété une formation d'un an en Développement Web/Web Mobile. Cette base
+        solide a été immédiatement mise à profit durant une première expérience d'un an au sein d'une petite entreprise.
+        Aujourd'hui, je suis un développeur motivé, prêt à appliquer mes compétences et ma double approche (formation et
+        terrain) à de nouveaux projets stimulants.
+      </p>
+    </div>
+  </section>
+  <!-- FIN SECTION A PROPOS -->
 
-    <section id="accueil">
-      <h1>NOM <br/>PRENOM</h1>
-      <p>DEVELOPPEUR WEB <br/>JUNIOR</p>
-    </section>
-
-    <!-- DEBUT SECTION A PROPOS -->
-    <section id="a-propos" class="xp-window container">
-      <div class="title-bar">
-        <div class="title-bar-text">
-          <img src="img/dossier.png" alt="image dossier" />
-          <h3>A propos</h3>
+  <!-- DEBUT SECTION COMPETENCES -->
+  <section id="competences" class="window window-desktop container">
+    <h2 class="section-title">Compétences</h2>
+    <div id="competences-grid">
+      <!-- DEBUT FENETRE LANGAGES -->
+      <article class="xp-window">
+        <div class="title-bar">
+          <div class="title-bar-text">
+            <img src="img/dossier.png" alt="dossier" />
+            <h3>Langages</h3>
+          </div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize" class="control-btn minimize-btn"></button>
+            <button aria-label="Maximize" class="control-btn maximize-btn"></button>
+            <button aria-label="Close" class="control-btn close-btn"></button>
+          </div>
         </div>
 
-        <div class="title-bar-controls">
-          <button
-            aria-label="Minimize"
-            class="control-btn minimize-btn"
-          ></button>
-          <button
-            aria-label="Maximize"
-            class="control-btn maximize-btn"
-          ></button>
-          <button aria-label="Close" class="control-btn close-btn"></button>
+        <div class="window-info">
+          <div class="card-window">
+            <img src="icon_competences/html.webp" class="icon_img" alt="logo html" />
+            <p>HTML5</p>
+          </div>
+
+          <div class="card-window">
+            <img src="icon_competences/CSS.png" class="icon_img" alt="logo css" />
+            <p>CSS3</p>
+          </div>
+
+          <div class="card-window">
+            <img src="icon_competences/JS.png" class="icon_img" alt="logo javascript" />
+            <p>JAVASCRIPT</p>
+          </div>
+
+          <div class="card-window">
+            <img src="icon_competences/php.png" class="icon_img" alt="logo php" />
+            <p>PHP</p>
+          </div>
         </div>
-      </div>
-      <div class="window-info img-profil">
-        <img src="img/dossier.png" alt="photo_profil" class="photo-profil" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit natus
-          quod quasi. Impedit quibusdam ex laudantium qui aut neque ipsum labore
-          facere necessitatibus aliquid maiores nulla, laborum ullam itaque
-          aspernatur!
-        </p>
-      </div>
-    </section>
-    <!-- FIN SECTION A PROPOS -->
+      </article>
+      <!-- FIN FENETRE LANGAGES -->
 
-    <!-- DEBUT SECTION COMPETENCES -->
-    <section id="competences" class="window window-desktop container">
-      <h2 class="section-title">Compétences</h2>
-      <div id="competences-grid">
-        <article class="xp-window">
-          <div class="title-bar">
-            <div class="title-bar-text">
-              <img src="img/dossier.png" alt="dossier"/>
-              <h3>Langages</h3>
-            </div>
-
-            <div class="title-bar-controls">
-              <button
-                aria-label="Minimize"
-                class="control-btn minimize-btn"
-              ></button>
-              <button
-                aria-label="Maximize"
-                class="control-btn maximize-btn"></button>
-              <button aria-label="Close" class="control-btn close-btn"></button>
-            </div>
+      <!-- DEBUT FENETRE CONCEPTIONS -->
+      <article class="xp-window">
+        <div class="title-bar">
+          <div class="title-bar-text">
+            <img src="img/dossier.png" alt="dossier" />
+            <h3>Conceptions</h3>
           </div>
 
-          <div class="window-info">
-            <div class="card-window">
-              <img
-                src="icon_competences/html.webp"
-                class="icon_img"
-                alt="logo html"/>
-              <p>html5</p>
-            </div>
-
-            <div class="card-window">
-              <img
-                src="icon_competences/CSS.png"
-                class="icon_img"
-                alt="logo css"/>
-              <p>css</p>
-            </div>
-
-            <div class="card-window">
-              <img
-                src="icon_competences/JS.png"
-                class="icon_img"
-                alt="logo javascript"/>
-              <p>javascript</p>
-            </div>
-
-            <div class="card-window">
-              <img
-                src="icon_competences/php.png"
-                class="icon_img"
-                alt="logo php"/>
-              <p>php</p>
-            </div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize" class="control-btn minimize-btn"></button>
+            </button>
+            <button aria-label="Maximize" class="control-btn maximize-btn"></button>
+            <button aria-label="Close" class="control-btn close-btn"></button>
           </div>
-        </article>
+        </div>
 
-        <article class="xp-window">
-          <div class="title-bar">
-            <div class="title-bar-text">
-              <img src="img/dossier.png" alt="dossier"/>
-              <h3>Conceptions</h3>
-            </div>
-
-            <div class="title-bar-controls">
-              <button
-                aria-label="Minimize"
-                class="control-btn minimize-btn"></button>
-              </button>
-              <button
-                aria-label="Maximize"
-                class="control-btn maximize-btn"
-              ></button>
-              <button aria-label="Close" class="control-btn close-btn"></button>
-            </div>
+        <div class="window-info">
+          <div class="card-window">
+            <img src="icon_competences/Figma.png" class="icon_img" alt="logo html" />
+            <p>FIGMA</p>
           </div>
 
-          <div class="window-info">
-            <div class="card-window">
-              <img
-                src="icon_competences/Figma.png"
-                class="icon_img"
-                alt="logo html"
-              />
-              <p>Figma</p>
-            </div>
-
-            <div class="card-window">
-              <img
-                src="icon_competences/Canva.png"
-                class="icon_img"
-                alt="logo html"
-              />
-              <p>Canva</p>
-            </div>
-
-            <p>Modélisation SQL (Mérise)</p>
-          </div>
-        </article>
-
-        <article class="xp-window">
-          <div class="title-bar">
-            <div class="title-bar-text">
-              <img src="img/dossier.png" alt="dossier" />
-              <h3>Framework</h3>
-            </div>
-
-            <div class="title-bar-controls">
-              <button
-                aria-label="Minimize"
-                class="control-btn minimize-btn"
-              ></button>
-              <button
-                aria-label="Maximize"
-                class="control-btn maximize-btn"
-              ></button>
-              <button aria-label="Close" class="control-btn close-btn"></button>
-            </div>
+          <div class="card-window">
+            <img src="icon_competences/Canva.png" class="icon_img" alt="logo html" />
+            <p>CANVA</p>
           </div>
 
-          <div class="window-info">
-            <div class="card-window">
-              <img
-                src="icon_competences/codeigniter.svg"
-                class="icon_img"
-                alt="logo html"
-              />
-              <p>CodeIgniter</p>
-            </div>
+          <p>MODELISATION SQL (Mérise)</p>
+        </div>
+      </article>
+      <!-- FIN FENETRE CONCEPTIONS -->
 
-            <div class="card-window">
-              <img
-                src="icon_competences/Bootstrap.png"
-                class="icon_img"
-                alt="logo html"
-              />
-              <p>Bootstrap</p>
-            </div>
-
-            <div class="card-window">
-              <img
-                src="icon_competences/tailwind.png"
-                class="icon_img"
-                alt="logo html"
-              />
-              <p>Tailwind CSS</p>
-            </div>
-          </div>
-        </article>
-
-        <article class="xp-window">
-          <div class="title-bar">
-            <div class="title-bar-text">
-              <img src="img/dossier.png" alt="dossier" />
-              <h3>Environnements</h3>
-            </div>
-
-            <div class="title-bar-controls">
-              <button
-                aria-label="Minimize"
-                class="control-btn minimize-btn"
-              ></button>
-              <button
-                aria-label="Maximize"
-                class="control-btn maximize-btn"
-              ></button>
-              <button aria-label="Close" class="control-btn close-btn"></button>
-            </div>
+      <!-- DEBUT FENETRE FRAMEWORK -->
+      <article class="xp-window">
+        <div class="title-bar">
+          <div class="title-bar-text">
+            <img src="img/dossier.png" alt="dossier" />
+            <h3>Framework</h3>
           </div>
 
-          <div class="window-info">
-            <div class="card-window">
-              <img
-                src="icon_competences/linux.png"
-                class="icon_img"
-                alt="logo html"
-              />
-              <p>Linux</p>
-            </div>
-
-            <div class="card-window">
-              <img
-                src="icon_competences/windows.png"
-                class="icon_img"
-                alt="logo html"
-              />
-              <p>Windows</p>
-            </div>
-
-            <div class="card-window">
-              <img
-                src="icon_competences/docker.png"
-                class="icon_img"
-                alt="logo html"
-              />
-              <p>Docker</p>
-            </div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize" class="control-btn minimize-btn"></button>
+            <button aria-label="Maximize" class="control-btn maximize-btn"></button>
+            <button aria-label="Close" class="control-btn close-btn"></button>
           </div>
-        </article>
+        </div>
 
-        <article class="xp-window">
-          <div class="title-bar">
-            <div class="title-bar-text">
-              <img src="img/dossier.png" alt="dossier" />
-              <h3>Gestion de projet</h3>
-            </div>
-
-            <div class="title-bar-controls">
-              <button
-                aria-label="Minimize"
-                class="control-btn minimize-btn"
-              ></button>
-              <button
-                aria-label="Maximize"
-                class="control-btn maximize-btn"
-              ></button>
-              <button aria-label="Close" class="control-btn close-btn"></button>
-            </div>
+        <div class="window-info">
+          <div class="card-window">
+            <img src="icon_competences/codeigniter.svg" class="icon_img" alt="logo html" />
+            <p>CODEIGNITER</p>
           </div>
 
-          <div class="window-info">
-            <div class="card-window">
-              <img
-                src="icon_competences/agile-method.png"
-                class="icon_img"
-                alt="logo html"
-              />
-              <p>Méthode Agile</p>
-            </div>
+          <div class="card-window">
+            <img src="icon_competences/Bootstrap.png" class="icon_img" alt="logo html" />
+            <p>BOOTSTRAP</p>
           </div>
-        </article>
 
-        <article class="xp-window">
+          <div class="card-window">
+            <img src="icon_competences/tailwind.png" class="icon_img" alt="logo html" />
+            <p>TAILWIND CSS</p>
+          </div>
+        </div>
+      </article>
+      <!-- FIN FENETRE FRAMEWORK -->
+
+      <!-- DEBUT FENETRE ENVIRONNEMENTS -->
+      <article class="xp-window">
+        <div class="title-bar">
+          <div class="title-bar-text">
+            <img src="img/dossier.png" alt="dossier" />
+            <h3>Environnements</h3>
+          </div>
+
+          <div class="title-bar-controls">
+            <button aria-label="Minimize" class="control-btn minimize-btn"></button>
+            <button aria-label="Maximize" class="control-btn maximize-btn"></button>
+            <button aria-label="Close" class="control-btn close-btn"></button>
+          </div>
+        </div>
+
+        <div class="window-info">
+          <div class="card-window">
+            <img src="icon_competences/linux.png" class="icon_img" alt="logo html" />
+            <p>LINUX</p>
+          </div>
+
+          <div class="card-window">
+            <img src="icon_competences/windows.png" class="icon_img" alt="logo html" />
+            <p>WINDOWS</p>
+          </div>
+
+          <div class="card-window">
+            <img src="icon_competences/docker.png" class="icon_img" alt="logo html" />
+            <p>DOCKER</p>
+          </div>
+        </div>
+      </article>
+      <!-- FIN FENETRE ENVIRONNEMENTS -->
+
+      <!-- DEBUT FENETRE GESTION DE PROJET -->
+      <article class="xp-window">
+        <div class="title-bar">
+          <div class="title-bar-text">
+            <img src="img/dossier.png" alt="dossier" />
+            <h3>Gestion de projet</h3>
+          </div>
+
+          <div class="title-bar-controls">
+            <button aria-label="Minimize" class="control-btn minimize-btn"></button>
+            <button aria-label="Maximize" class="control-btn maximize-btn"></button>
+            <button aria-label="Close" class="control-btn close-btn"></button>
+          </div>
+        </div>
+
+        <div class="window-info">
+          <div class="card-window">
+            <img src="icon_competences/agile-method.png" class="icon_img" alt="logo html" />
+            <p>METHODE AGILE (Trello)</p>
+          </div>
+        </div>
+      </article>
+    <!-- FIN FENETRE GESTION DE PROJET -->
+
+      <!-- <article class="xp-window">
           <div class="title-bar">
             <div class="title-bar-text">
               <img src="img/dossier.png" alt="dossier" />
@@ -329,78 +263,117 @@
               <p>...</p>
             </div>
           </div>
-        </article>
+        </article> -->
+    </div>
+  </section>
+  <!-- FIN SECTION COMPETENCES -->
+
+  <!-- DEBUT SECTION PROJETS -->
+  <section id="projets" class="xp-window container">
+    <div class="title-bar">
+      <div class="title-bar-text">
+        <img src="img/dossier.png" alt="image dossier" />
+        <h3>Projets</h3>
       </div>
-    </section>
-    <!-- FIN SECTION COMPETENCES -->
 
-    <!-- DEBUT SECTION PROJETS -->
-    <section id="projets" class="xp-window container">
-      <div class="title-bar">
-        <div class="title-bar-text">
-          <img src="img/dossier.png" alt="image dossier" />
-          <h3>Projets</h3>
-        </div>
-
-        <div class="title-bar-controls">
-          <button
-            aria-label="Minimize"
-            class="control-btn minimize-btn"
-          ></button>
-          <button
-            aria-label="Maximize"
-            class="control-btn maximize-btn"
-          ></button>
-          <button aria-label="Close" class="control-btn close-btn"></button>
-        </div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize" class="control-btn minimize-btn"></button>
+        <button aria-label="Maximize" class="control-btn maximize-btn"></button>
+        <button aria-label="Close" class="control-btn close-btn"></button>
       </div>
-      <div class="window-info">
-        <p>en construction</p>
-      </div>
-    </section>
-    <!-- FIN SECTION PROJETS -->
-
-    <footer class="xp-window footer">
-      <div class="title-bar">
-        <div class="title-bar-text">
-          <img src="img/dossier.png" alt="image dossier" />
-          <h3>Info</h3>
+    </div>
+    <!-- Début Card illustration projet -->
+    <div class="window-info card-projet">
+      <div class="card">
+        <div class="card-img">
+          <img src="img/lunviersdesjouets.png" alt="Site L'univers des jouets">
         </div>
-
-        <div class="title-bar-controls">
-          <button
-            aria-label="Minimize"
-            class="control-btn minimize-btn"
-          ></button>
-          <button
-            aria-label="Maximize"
-            class="control-btn maximize-btn"
-          ></button>
-          <button aria-label="Close" class="control-btn close-btn"></button>
+        <div class="card-body">
+          <div class="card-title">
+            <h3>L'univers des jouets</h3>
+          </div>
+          <div class="card-description">
+            <p>Site e-commerce fictif développé sous CodeIgniter/PHP. Intègre la gestion des produits (CRUD). Projet
+              réalisé dans le cadre <br>de l'examen du titre pro développeur web.</p>
+          </div>
+          <div class="card-outils">
+            <p>HTML5/CSS3, Bootstrap, JavaScript, Mysql, PHP(CodeIgniter)</p>
+          </div>
         </div>
       </div>
-      <div class="window-info-footer">
-        <p>2025 - NOM PRENOM</p>
-        <p>Developpeur web junior</p>
-        <small>Interface inspirée de XP.css (Licence MIT).</small>
-        <br />
-        <small
-          >Les images sont téléchargées sur le site https://unsplash.com/</small
-        >
-        <br />
-        <small
-          >Les icones sont récupérées sur le site
-          https://www.flaticon.com/.</small
-        >
-        <br />
-        <small
-          >Les icônes et les logos de technologies sont utilisés à des fins
-          d'illustration descriptive et sont la propriété de leurs marques
-          respectives.</small
-        >
-      </div>
-    </footer>
 
-    <script src="menu.js"></script>
-  </body>
+      <div class="card">
+        <div class="card-img">
+          <img src="img/fond_coline.jpg" alt="illustration">
+        </div>
+        <div class="card-body">
+          <div class="card-title">
+            <h3>Lesphotos</h3>
+          </div>
+          <div class="card-description">
+            <p>Site fictif pour visionner des photos </p>
+          </div>
+          <div class="card-outils">
+            <p>html, css, javascript, php, sql, tailwind, codeigniter</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+          <div class="card-img">
+          <img src="img/resir.png" alt="illustration">
+          </div>
+          <div class="card-body">
+            <div class="card-title">
+              <h3>Resir</h3>
+            </div>
+            <div class="card-description">
+            <p>Refonte du site d'une association developpé sous CodeIgniter/PHP</p>
+            </div>
+            <div class="card-outils">
+              <p>HTML5/CSS3, Bootstrap, Mysql, PHP(CodeIgniter)</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Fin Card illustration projet -->
+  </section>
+  <!-- FIN SECTION PROJETS -->
+
+
+  <!-- DEBUT FOOTER -->
+  <footer class="xp-window footer">
+    <div class="title-bar">
+      <div class="title-bar-text">
+        <img src="img/dossier.png" alt="image dossier" />
+        <h3>Info</h3>
+      </div>
+
+      <div class="title-bar-controls">
+        <button aria-label="Minimize" class="control-btn minimize-btn"></button>
+        <button aria-label="Maximize" class="control-btn maximize-btn"></button>
+        <button aria-label="Close" class="control-btn close-btn"></button>
+      </div>
+    </div>
+    <div class="window-info-footer">
+      <p>&copy; 2025 - NOM PRENOM</p>
+      <p>Developpeur web junior</p>
+      <hr>
+      <small>Interface inspirée de XP.css (Licence MIT).</small>
+      <br />
+      <small>Les images sont téléchargées sur le site https://unsplash.com/.</small>
+      <br />
+      <small>Les icones sont récupérées sur le site
+        https://www.flaticon.com/.</small>
+      <br />
+      <small>Les icônes et les logos de technologies sont utilisés à des fins
+        d'illustration descriptive et sont la propriété de leurs marques
+        respectives.</small>
+    </div>
+  </footer>
+  <!-- FIN FOOTER -->
+
+  <script src="menu.js"></script>
+</body>
+
 </html>
