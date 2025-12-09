@@ -163,7 +163,7 @@ h3 {
 }
 
 .card-img > img{
-  height: 250px;
+  height: 181px;
   width: 20rem;
 }
 
@@ -267,6 +267,14 @@ h3 {
       gap: 2rem;
     }
 
+    .card-img > img{
+      height: 174px;
+      width: 22rem;
+    }
+
+    .card-body{
+      padding: 0.5rem;
+    }
     
 }
 
